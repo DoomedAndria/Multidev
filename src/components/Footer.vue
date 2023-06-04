@@ -3,70 +3,7 @@ import MultiDevIcon from "@/assets/icons/MultiDevIcon.vue";
 import FacebookIcon from "@/assets/icons/Footer/FacebookIcon.vue";
 import InstagramIcon from "@/assets/icons/Footer/InstagramIcon.vue";
 import TwitterIcon from "@/assets/icons/Footer/TwitterIcon.vue";
-
-const links = [
-    {
-        name: "Search Engine Optimization",
-        to: "#",
-    },
-    {
-        name: "Locations",
-        to: "#",
-    },
-    {
-        name: "Home",
-        to: "/",
-    },
-    {
-        name: "Learn More",
-        to: "#",
-    },
-    {
-        name: "Dallas Web Design",
-        to: "#",
-    },
-    {
-        name: "Custom Websites",
-        to: "/customSites",
-    },
-    {
-        name: "Plano Web Design",
-        to: "#",
-    },
-    {
-        name: "Frisco Web Design",
-        to: "#",
-    },
-    {
-        name: "Our Work",
-        to: "/ourWork",
-    },
-    {
-        name: "Fort Worth Web Design",
-        to: "#",
-    },
-    {
-        name: "Blog",
-        to: "/blog",
-    },
-    {
-        name: "Allen Web Design",
-        to: "#",
-    },
-    {
-        name: "Contact",
-        to: "/contactUs",
-    },
-    {
-        name: "McKinney Web Design",
-        to: "#",
-    },
-    {
-        name: "Grapevine Web Design",
-        to: "#",
-    }
-]
-
+import FooterLinks from "@/components/FooterLinks.vue";
 </script>
 
 <template>
@@ -87,29 +24,26 @@ const links = [
                     </div>
                     <h5 class="my-6">Follow Us</h5>
                     <div class="flex gap-6">
-                        <FacebookIcon/>
-                        <InstagramIcon/>
-                        <TwitterIcon/>
+                        <RouterLink to="#"><FacebookIcon/></RouterLink>
+                        <RouterLink to="#"><InstagramIcon/></RouterLink>
+                        <RouterLink to="#"><TwitterIcon/></RouterLink>
                     </div>
                 </div>
 
-                <div class="w-full md:w-96 flex justify-end flex-wrap mt-8">
-                    <div v-for="link in links" class="w-1/2 mb-4 pr-4  flex items-center text-sm md:text-base">
-                        <RouterLink :to="link.to">{{ link.name }}</RouterLink>
-                    </div>
-                </div>
+                <FooterLinks/>
+
             </div>
 
             <hr class="opacity-30 border-[#D9D9D9]">
 
             <div
-                class="w-full px-5 md:px-0 py-10 md:py-7 flex flex-col md:flex-row-reverse  md:justify-between text-sm md:text-xs text-[#EEF8FF] text-opacity-80">
+                class="w-full px-5 md:px-0 py-10 md:py-7 flex flex-col md:flex-row-reverse md:justify-between text-sm md:text-xs text-[#EEF8FF] text-opacity-80">
                 <div class="w-full  flex justify-end gap-7">
                     <div class="w-full md:w-auto mb-7 md:mb-0 pr-4 md:pr-0  flex items-center ">
-                        Privacy Policy
+                        <RouterLink to="#">Privacy Policy</RouterLink>
                     </div>
                     <div class="w-full md:w-auto mb-7 md:mb-0 pr-4 md:pr-0  flex items-center ">
-                        Sitemap
+                        <RouterLink to="#">Sitemap</RouterLink>
                     </div>
                 </div>
                 <div class="w-full flex items-center ">

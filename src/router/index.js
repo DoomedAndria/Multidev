@@ -30,7 +30,7 @@ const router = createRouter({
         },
         {
             path: '/blog',
-            component: () => RouterView,
+            component: RouterView,
             children: [
                 {
                     path: '',
