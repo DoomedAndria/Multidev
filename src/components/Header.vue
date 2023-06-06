@@ -33,9 +33,12 @@ function toggleHam(){
 
         <NavbarLinks :class="width<768&&!hamOpen?'hidden':'flex'"/>
 
-        <MultiButton class="hidden md:flex">Let's Talk
-            <RightArrowIcon class="ml-1.5"/>
-        </MultiButton>
+        <RouterLink to="/contactUs" class="hidden md:flex">
+            <MultiButton >Let's Talk
+                <RightArrowIcon class="ml-1.5"/>
+            </MultiButton>
+        </RouterLink>
+
 
         <div @click="toggleHam" class="md:hidden">
             <HamburgerIcon :class="hamOpen?'hidden':''"/>
