@@ -1,11 +1,11 @@
 <script setup>
 import {onBeforeUnmount, onMounted, ref} from "vue";
 import MultiDevIcon from "@/assets/icons/MultiDevIcon.vue";
-import HamburgerIcon from "@/assets/icons/header/HamburgerIcon.vue";
+import HamburgerIcon from "@/assets/icons/Header/HamburgerIcon.vue";
 import NavbarLinks from "@/components/NavbarLinks.vue";
 import MultiButton from "@/components/MultiButton.vue";
-import RightArrowIcon from "@/assets/icons/header/RightArrowIcon.vue";
-import CloseIcon from "@/assets/icons/header/CloseIcon.vue";
+import RightArrowIcon from "@/assets/icons/Header/RightArrowIcon.vue";
+import CloseIcon from "@/assets/icons/Header/CloseIcon.vue";
 
 const hamOpen = ref(false)
 const width = ref(window.innerWidth)

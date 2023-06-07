@@ -1,6 +1,6 @@
 <script setup>
 import {ref} from "vue";
-import BottomArrowIcon from "@/assets/icons/header/BottomArrowIcon.vue";
+import BottomArrowIcon from "@/assets/icons/Header/BottomArrowIcon.vue";
 
 const props = defineProps(
     {
