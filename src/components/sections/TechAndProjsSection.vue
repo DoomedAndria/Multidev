@@ -9,7 +9,7 @@ import LaravelIcon from "@/assets/icons/TechAndProjs/LaravelIcon.vue";
 import '@splidejs/vue-splide/css';
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import ClientCard from "@/components/ClientCard.vue";
-import RightArrowIcon from "@/assets/icons/Header/RightArrowIcon.vue";
+import MultiButton from "@/components/MultiButton.vue";
 
 const options = {
     rewind : true,
@@ -50,6 +50,22 @@ const clients = [
             "of projects to help improve user experience and SEO. The team is\n" +
             "knowledgeable, highly skilled and very responsive."
     },
+    {
+        name: "Jennifer Hall",
+        company: "AegisLiving",
+        content: "Icepick was able to help us get a very difficult web redesign\n" +
+            "project across the finish line and continues to manage a large list\n" +
+            "of projects to help improve user experience and SEO. The team is\n" +
+            "knowledgeable, highly skilled and very responsive."
+    },
+    {
+        name: "Jennifer Hall",
+        company: "AegisLiving",
+        content: "Icepick was able to help us get a very difficult web redesign\n" +
+            "project across the finish line and continues to manage a large list\n" +
+            "of projects to help improve user experience and SEO. The team is\n" +
+            "knowledgeable, highly skilled and very responsive."
+    },
 ]
 </script>
 
@@ -57,7 +73,7 @@ const clients = [
     <section class="flex flex-col items-center">
 
         <h2 class="text-2xl md:text-4xl font-semibold text-[#25344F]">Technologies We Use</h2>
-        <div class="overflow-scroll w-full md:justify-center flex gap-20 p-12 mb-12">
+        <div class="overflow-scroll md:overflow-hidden w-full md:justify-center flex gap-20 p-12 mb-12">
             <FigmaIcon/>
             <WordpressIcon/>
             <WoocomerceIcon/>
@@ -92,10 +108,9 @@ const clients = [
                 </div>
             </div>
 
-            <button class="px-8 py-3 rounded-3xl flex items-center my-14 bg-transparent border border-white text-white ">
+            <MultiButton type="light" arrow="true" class="px-8 py-3 rounded-3xl flex items-center my-14">
                 View All Projects
-                <RightArrowIcon color="white" class="ml-2"/>
-            </button>
+            </MultiButton>
         </div>
     </section>
 

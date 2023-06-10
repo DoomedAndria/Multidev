@@ -4,7 +4,6 @@ import MultiDevIcon from "@/assets/icons/MultiDevIcon.vue";
 import HamburgerIcon from "@/assets/icons/Header/HamburgerIcon.vue";
 import NavbarLinks from "@/components/NavbarLinks.vue";
 import MultiButton from "@/components/MultiButton.vue";
-import RightArrowIcon from "@/assets/icons/Header/RightArrowIcon.vue";
 import CloseIcon from "@/assets/icons/Header/CloseIcon.vue";
 
 const hamOpen = ref(false)
@@ -34,9 +33,7 @@ function toggleHam(){
         <NavbarLinks :class="width<768&&!hamOpen?'hidden':'flex'"/>
 
         <RouterLink to="/contactUs" class="hidden md:flex">
-            <MultiButton >Let's Talk
-                <RightArrowIcon class="ml-1.5"/>
-            </MultiButton>
+            <MultiButton >Let's Talk</MultiButton>
         </RouterLink>
 
 
