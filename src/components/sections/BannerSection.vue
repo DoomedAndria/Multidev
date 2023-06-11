@@ -3,7 +3,7 @@
         <h3 class="text-white">
             Ready to work with us?
         </h3>
-        <RouterLink to="#" class="text-[#FFB902] underline w-80 md:w-auto" >
+        <RouterLink to="/contactUs" class="text-[#FFB902] underline w-80 md:w-auto" >
             Let's build something awesome.
         </RouterLink>
     </section>

@@ -10,6 +10,7 @@ import IrisTelehealthIcon from "@/assets/icons/Home/IrisTelehealthIcon.vue";
 import UnitedWayIcon from "@/assets/icons/Home/UnitedWayIcon.vue";
 import WebsiteIcon from "@/assets/icons/Home/WebsiteIcon.vue";
 import SearchEngineIcon from "@/assets/icons/Home/SearchEngineIcon.vue";
+import PostCard from "@/components/PostCard.vue";
 </script>
 
 <template>
@@ -27,13 +28,18 @@ import SearchEngineIcon from "@/assets/icons/Home/SearchEngineIcon.vue";
                     to your business.
                 </p>
                 <div class="w-full flex justify-center gap-5 mb-32">
-                    <MultiButton arrow="true" class="py-4 px-5 rounded-full">Book a Call</MultiButton>
-
-                    <MultiButton type="light" arrow="true" class="py-4 px-5 rounded-full">Our Work</MultiButton>
+                    <RouterLink to="/contactUs">
+                        <MultiButton arrow="true" class="py-4 px-5 rounded-full">Book a Call</MultiButton>
+                    </RouterLink>
+                    <RouterLink to="/ourWork">
+                        <MultiButton type="light" arrow="true" class="py-4 px-5 rounded-full">Our Work</MultiButton>
+                    </RouterLink>
                 </div>
                 <div class="w-full flex justify-center items-center mb-14">
-                    <hr  class="hidden md:block w-60 opacity-20">
-                    <div class=" font-medium text-base text-white md:w-96 text-center">Trusted by Innovative Companies Worldwide</div>
+                    <hr class="hidden md:block w-60 opacity-20">
+                    <div class=" font-medium text-base text-white md:w-96 text-center">Trusted by Innovative Companies
+                        Worldwide
+                    </div>
                     <hr class="hidden md:block w-60 opacity-50">
                 </div>
 
@@ -66,14 +72,16 @@ import SearchEngineIcon from "@/assets/icons/Home/SearchEngineIcon.vue";
                         <h2 class="my-5 text-xl font-medium text-white text-center">
                             Custom Websites
                         </h2>
-                        <p class="max-w-sm text-base font-normal text-white text-center">
+                        <p class="max-w-sm text-base font-normal text-white text-center mb-8">
                             Whether you’re looking to build a custom marketing
                             website or the next Twitter we can help you build it.
                         </p>
-                        <MultiButton type="light" arrow="true" class="py-4 rounded-full mt-8">Learn More </MultiButton>
+                        <RouterLink to="/customSites">
+                            <MultiButton type="light" arrow="true" class="py-4 rounded-full ">Learn More</MultiButton>
+                        </RouterLink>
                     </div>
 
-                        <div class="hidden md:block h-52 w-px bg-white opacity-20"></div>
+                    <div class="hidden md:block h-52 w-px bg-white opacity-20"></div>
 
                     <div class="flex flex-col items-center">
                         <div class="p-9 rounded-full bg-[#8ac0ff1a]">
@@ -86,13 +94,45 @@ import SearchEngineIcon from "@/assets/icons/Home/SearchEngineIcon.vue";
                             You’ve got yourself a beautiful website but now you need
                             your customers to find it, let us help you.
                         </p>
-                        <MultiButton type="light" arrow="true" class="py-4 rounded-full mt-8">Learn More </MultiButton>
+                        <MultiButton type="light" arrow="true" class="py-4 rounded-full mt-8">Learn More</MultiButton>
                     </div>
                 </div>
             </div>
 
         </div>
+
         <TechAndProjsSection/>
-        home lower
+
+        <div class="w-full flex flex-col items-center px-5 pt-20 pb-28">
+            <h2 class="text-2xl md:text-4xl font-medium text-[#25344F]">Recent Posts</h2>
+            <div class="max-w-6xl flex flex-col md:flex-row gap-10 md:gap-6 mt-10 mb-10">
+                <PostCard/>
+                <PostCard/>
+                <PostCard/>
+            </div>
+            <RouterLink to="/blog" class="mb-32">
+                <MultiButton type="normal" arrow="true" class="py-4 px-7 rounded-full">
+                    View All Posts
+                </MultiButton>
+            </RouterLink>
+
+            <div class="max-w-6xl w-full flex justify-center py-8 px-5 md:py-20 bg-[#6967CE] rounded-3xl">
+                <div class="max-w-md flex flex-col items-center text-center gap-5">
+                    <h3 class="text-xl md:text-4xl md:font-semibold text-white font-medium">
+                        Want to see if Icepick is
+                        the right fit for you?
+                    </h3>
+                    <p class="text-base md:text-lg text-white opacity-70 md:mb-5">
+                        Give us a shout and let’s see if we’re the
+                        right match for you and your business!
+                    </p>
+                    <RouterLink to="/contactUs">
+                        <MultiButton arrow="true" class="py-4 rounded-full px-6">
+                            Let's Talk
+                        </MultiButton>
+                    </RouterLink>
+                </div>
+            </div>
+        </div>
     </MainLayout>
 </template>
