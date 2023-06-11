@@ -32,7 +32,7 @@ import PostCard from "@/components/PostCard.vue";
                         <MultiButton arrow="true" class="py-4 px-5 rounded-full">Book a Call</MultiButton>
                     </RouterLink>
                     <RouterLink to="/ourWork">
-                        <MultiButton type="light" arrow="true" class="py-4 px-5 rounded-full">Our Work</MultiButton>
+                        <MultiButton btype="light" arrow="true" class="py-4 px-5 rounded-full">Our Work</MultiButton>
                     </RouterLink>
                 </div>
                 <div class="w-full flex justify-center items-center mb-14">
@@ -77,7 +77,7 @@ import PostCard from "@/components/PostCard.vue";
                             website or the next Twitter we can help you build it.
                         </p>
                         <RouterLink to="/customSites">
-                            <MultiButton type="light" arrow="true" class="py-4 rounded-full ">Learn More</MultiButton>
+                            <MultiButton btype="light" arrow="true" class="py-4 rounded-full ">Learn More</MultiButton>
                         </RouterLink>
                     </div>
 
@@ -94,7 +94,7 @@ import PostCard from "@/components/PostCard.vue";
                             You’ve got yourself a beautiful website but now you need
                             your customers to find it, let us help you.
                         </p>
-                        <MultiButton type="light" arrow="true" class="py-4 rounded-full mt-8">Learn More</MultiButton>
+                        <MultiButton btype="light" arrow="true" class="py-4 rounded-full mt-8">Learn More</MultiButton>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@ import PostCard from "@/components/PostCard.vue";
                 <PostCard/>
             </div>
             <RouterLink to="/blog" class="mb-32">
-                <MultiButton type="normal" arrow="true" class="py-4 px-7 rounded-full">
+                <MultiButton btype="normal" arrow="true" class="py-4 px-7 rounded-full">
                     View All Posts
                 </MultiButton>
             </RouterLink>

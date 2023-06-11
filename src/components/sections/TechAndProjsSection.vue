@@ -109,7 +109,7 @@ const clients = [
             </div>
 
             <RouterLink to="/ourWork" class="my-14">
-                <MultiButton type="light" arrow="true" class="px-8 py-3 rounded-3xl flex items-center">
+                <MultiButton btype="light" arrow="true" class="px-8 py-3 rounded-3xl flex items-center">
                     View All Projects
                 </MultiButton>
             </RouterLink>
