@@ -28,6 +28,7 @@ const options = {
 const clients = [
     {
         name: "Jeff Rasansky",
+        image: "src/assets/images/TechAndProjs/p1.png",
         company: "JR Law Firm",
         content: "The guys at Icepick do an amazing job, and have helped us with\n" +
             "more than one website. Always professional, quick to respond,\n" +
@@ -37,6 +38,7 @@ const clients = [
     {
         name: "Sondra Heffernan",
         company: "Infowerks",
+        image: "src/assets/images/TechAndProjs/p2.png",
         content: "Icepick recently updated our company website. Our company is\n" +
             "beyond happy with our new design, the delivery, and their\n" +
             "professionalism in working with multiple decision makers. Looking\n" +
@@ -45,27 +47,46 @@ const clients = [
     {
         name: "Jennifer Hall",
         company: "AegisLiving",
+        image: "src/assets/images/TechAndProjs/p3.png",
         content: "Icepick was able to help us get a very difficult web redesign\n" +
             "project across the finish line and continues to manage a large list\n" +
             "of projects to help improve user experience and SEO. The team is\n" +
             "knowledgeable, highly skilled and very responsive."
     },
     {
-        name: "Jennifer Hall",
-        company: "AegisLiving",
-        content: "Icepick was able to help us get a very difficult web redesign\n" +
-            "project across the finish line and continues to manage a large list\n" +
-            "of projects to help improve user experience and SEO. The team is\n" +
-            "knowledgeable, highly skilled and very responsive."
+        name: "Jeff Rasansky",
+        image: "src/assets/images/TechAndProjs/p1.png",
+        company: "JR Law Firm",
+        content: "The guys at Icepick do an amazing job, and have helped us with\n" +
+            "more than one website. Always professional, quick to respond,\n" +
+            "great eye for design, and more than willing to help if anything\n" +
+            "comes up!"
+    },
+    {
+        name: "Sondra Heffernan",
+        company: "Infowerks",
+        image: "src/assets/images/TechAndProjs/p2.png",
+        content: "Icepick recently updated our company website. Our company is\n" +
+            "beyond happy with our new design, the delivery, and their\n" +
+            "professionalism in working with multiple decision makers. Looking\n" +
+            "forward to working with Icepick on future projects."
     },
     {
         name: "Jennifer Hall",
         company: "AegisLiving",
+        image: "src/assets/images/TechAndProjs/p3.png",
         content: "Icepick was able to help us get a very difficult web redesign\n" +
             "project across the finish line and continues to manage a large list\n" +
             "of projects to help improve user experience and SEO. The team is\n" +
             "knowledgeable, highly skilled and very responsive."
     },
+
+]
+const images = [
+    "src/assets/images/TechAndProjs/proj1.png",
+    "src/assets/images/TechAndProjs/proj2.png",
+    "src/assets/images/TechAndProjs/proj3.png",
+    "src/assets/images/TechAndProjs/proj4.png",
 ]
 </script>
 
@@ -94,18 +115,10 @@ const clients = [
             <h2 class="font-medium text-white text-2xl md:text-4xl my-10 md:my-16">Recent Projects</h2>
             <div class=" grid grid-cols-1 md:grid-cols-2 gap-8 ">
 
-                <div class="w-full max-w-xl aspect-square">
-                    <img alt="imag" src="@/assets/images/TechAndProjs/proj1.png" class="w-full h-full object-cover rounded-2xl">
+                <div v-for="image in images" class="w-full max-w-xl aspect-square">
+                    <img alt="imag" :src="image" class="w-full h-full object-cover rounded-2xl">
                 </div>
-                <div class="w-full max-w-xl aspect-square">
-                    <img alt="imag" src="@/assets/images/TechAndProjs/proj2.png" class="w-full h-full object-cover rounded-2xl">
-                </div>
-                <div class="w-full max-w-xl aspect-square">
-                    <img alt="imag" src="@/assets/images/TechAndProjs/proj3.png" class="w-full h-full object-cover rounded-2xl">
-                </div>
-                <div class="w-full max-w-xl aspect-square">
-                    <img alt="imag" src="@/assets/images/TechAndProjs/proj4.png" class="w-full h-full object-cover rounded-2xl">
-                </div>
+                
             </div>
 
             <RouterLink to="/ourWork" class="my-14">

@@ -11,6 +11,22 @@ import UnitedWayIcon from "@/assets/icons/Home/UnitedWayIcon.vue";
 import WebsiteIcon from "@/assets/icons/Home/WebsiteIcon.vue";
 import SearchEngineIcon from "@/assets/icons/Home/SearchEngineIcon.vue";
 import PostCard from "@/components/PostCard.vue";
+
+const posts = [
+    {
+        image: "src/assets/images/Home/post1.png",
+        title: "Custom WordPress Development: A Comprehensive Guide"
+    },
+    {
+        image: "src/assets/images/Home/post3.png",
+        title: "10 Simple Ways to Improve Your Website Copy for Higher Conversions"
+    },
+    {
+        image: "src/assets/images/Home/post2.png",
+        title: "10 Landing Page Do’s and Don’ts"
+    },
+]
+
 </script>
 
 <template>
@@ -106,9 +122,7 @@ import PostCard from "@/components/PostCard.vue";
         <div class="w-full flex flex-col items-center px-5 pt-20 pb-28">
             <h2 class="text-2xl md:text-4xl font-medium text-[#25344F]">Recent Posts</h2>
             <div class="max-w-6xl flex flex-col md:flex-row gap-10 md:gap-6 mt-10 mb-10">
-                <PostCard/>
-                <PostCard/>
-                <PostCard/>
+                <PostCard v-for="post in posts" :data="post"/>
             </div>
             <RouterLink to="/blog" class="mb-32">
                 <MultiButton btype="normal" arrow="true" class="py-4 px-7 rounded-full">
