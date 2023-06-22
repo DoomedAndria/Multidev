@@ -26,7 +26,7 @@ const style = () => {
 <template>
     <button :class="style()" class="group px-5 py-2.5 rounded-3xl flex items-center transition-all duration-200">
         <slot/>
-        <RightArrowIcon v-if="props.arrow" :fill="btype==='orange'?'black':btype==='light'?'white':'#25344F'"
+        <RightArrowIcon v-if="props.arrow==='true'" :fill="btype==='orange'?'black':btype==='light'?'white':'#25344F'"
                         class="ml-1.5 transform group-hover:translate-x-1 transition-all duration-200"/>
     </button>
 </template>

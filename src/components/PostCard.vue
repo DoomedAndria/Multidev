@@ -17,7 +17,7 @@ const props = defineProps({
         <h3 class="font-medium text-lg mt-5 mb-2.5 text-[#25344F]">
             {{ data.title }}
         </h3>
-        <RouterLink to="#">
+        <RouterLink to="blog/123">
             <h5 class="flex items-center text-base text-[#23A6F0]">
                 Read more
                 <RightArrowIcon class="ml-1.5 " fill="#23A6F0"/>

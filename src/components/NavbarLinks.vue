@@ -33,7 +33,7 @@ const route = useRoute()
 </script>
 
 <template>
-    <div class="absolute md:static w-full md:w-auto top-14 left-0 flex flex-col items-center md:flex-row gap-10 py-16 md:py-0 border-t border-white md:border-0 bg-[#5A58AB]">
+    <div class="z-50 absolute md:static w-full md:w-auto top-14 left-0 flex flex-col items-center md:flex-row gap-10 py-16 md:py-0 border-t border-white md:border-0 bg-[#5A58AB]">
         <div v-for="link in links" >
             <MiniDropdown v-if="link.children" :name="link.name" :children="link.children"/>
             <RouterLink v-else :to="link.href" :class="route.path===link.href?'text-opacity-100':'text-opacity-60'"

@@ -33,7 +33,7 @@ function toggleHam(){
         <NavbarLinks :class="width<768&&!hamOpen?'hidden':'flex'"/>
 
         <RouterLink to="/contactUs" class="hidden md:flex">
-            <MultiButton>Let's Talk</MultiButton>
+            <MultiButton arrow="true">Let's Talk</MultiButton>
         </RouterLink>
 
 
