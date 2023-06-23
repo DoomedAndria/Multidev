@@ -1,11 +1,65 @@
 <script setup>
 import BannerLayout from "@/layouts/BannerLayout.vue";
+import SiteCard from "@/components/SiteCard.vue";
+
+const siteData = [
+    {
+        image:'src/assets/images/OurWork/site.png',
+        title:'Corewood Care',
+        content: 'Corewood Care is a privately owned\n' +
+            'home care and care management\n' +
+            'agency dedicated to providing\n' +
+            'personalized and exceptional care\n' +
+            'support services to individuals in familiar surroundings.',
+        siteLink:''
+    },
+    {
+        image:'src/assets/images/OurWork/site.png',
+        title:'Corewood Care',
+        content: 'Corewood Care is a privately owned\n' +
+            'home care and care management\n' +
+            'agency dedicated to providing\n' +
+            'personalized and exceptional care\n' +
+            'support services to individuals in familiar surroundings.',
+        siteLink:''
+    },
+    {
+        image:'src/assets/images/OurWork/site.png',
+        title:'Corewood Care',
+        content: 'Corewood Care is a privately owned\n' +
+            'home care and care management\n' +
+            'agency dedicated to providing\n' +
+            'personalized and exceptional care\n' +
+            'support services to individuals in familiar surroundings.',
+        siteLink:''
+    },
+    {
+        image:'src/assets/images/OurWork/site.png',
+        title:'Corewood Care',
+        content: 'Corewood Care is a privately owned\n' +
+            'home care and care management\n' +
+            'agency dedicated to providing\n' +
+            'personalized and exceptional care\n' +
+            'support services to individuals in familiar surroundings.',
+        siteLink:''
+    }
+]
+
 </script>
 
 <template>
     <BannerLayout>
-        <div class=' w-full flex justify-center items-center py-5'>
-            <h1 class='text-6xl shadow-slate-800'> Our Work </h1>
+        <div class="flex flex-col gap-7 items-center text-center py-10 md:py-20 px-5 bg-[#6967CE]">
+            <h1 class="text-4xl md:text-6xl text-white font-bold">
+                Our Work
+            </h1>
+            <p class="text-base md:text-xl text-[#BDC8DB] max-w-2xl">
+                We take pride in the work we do and
+                love helping businesses succeed online.
+            </p>
+        </div>
+        <div class="flex flex-col items-center gap-7 py-16 px-5">
+            <SiteCard v-for="data in siteData" :data="data"/>
         </div>
     </BannerLayout>
 </template>
