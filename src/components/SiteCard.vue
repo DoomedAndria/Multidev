@@ -19,7 +19,7 @@ const props = defineProps({
                 <p class="text-lg text-[#EEF8FF]">
                     {{data.content}}
                 </p>
-                <MultiButton btype="light" class="bg-white text-[#2E4F5B]">
+                <MultiButton btype="light">
                     Visit Site
                 </MultiButton>
             </div>

@@ -13,7 +13,8 @@ import MultiButton from "@/components/MultiButton.vue";
                         <span class="text-[#FFB902]">Custom</span> Websites
                     </h1>
                     <p class="text-base md:text-2xl text-[#BDC8DB]">
-                        Whether you’re looking to build a custom marketing website or the next Twitter we can help you build anything you’re envisioning.
+                        Whether you’re looking to build a custom marketing website or
+                        the next Twitter we can help you build anything you’re envisioning.
                     </p>
                     <RouterLink to="/contactUs">
                         <MultiButton btype="light" arrow="false" class="px-8 py-4 rounded-full">Get In Touch</MultiButton>

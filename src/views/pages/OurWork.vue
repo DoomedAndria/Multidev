@@ -1,49 +1,9 @@
 <script setup>
 import BannerLayout from "@/layouts/BannerLayout.vue";
 import SiteCard from "@/components/SiteCard.vue";
+import {useOurWork} from "@/composables/useOurWork";
 
-const siteData = [
-    {
-        image:'src/assets/images/OurWork/site.png',
-        title:'Corewood Care',
-        content: 'Corewood Care is a privately owned\n' +
-            'home care and care management\n' +
-            'agency dedicated to providing\n' +
-            'personalized and exceptional care\n' +
-            'support services to individuals in familiar surroundings.',
-        siteLink:''
-    },
-    {
-        image:'src/assets/images/OurWork/site.png',
-        title:'Corewood Care',
-        content: 'Corewood Care is a privately owned\n' +
-            'home care and care management\n' +
-            'agency dedicated to providing\n' +
-            'personalized and exceptional care\n' +
-            'support services to individuals in familiar surroundings.',
-        siteLink:''
-    },
-    {
-        image:'src/assets/images/OurWork/site.png',
-        title:'Corewood Care',
-        content: 'Corewood Care is a privately owned\n' +
-            'home care and care management\n' +
-            'agency dedicated to providing\n' +
-            'personalized and exceptional care\n' +
-            'support services to individuals in familiar surroundings.',
-        siteLink:''
-    },
-    {
-        image:'src/assets/images/OurWork/site.png',
-        title:'Corewood Care',
-        content: 'Corewood Care is a privately owned\n' +
-            'home care and care management\n' +
-            'agency dedicated to providing\n' +
-            'personalized and exceptional care\n' +
-            'support services to individuals in familiar surroundings.',
-        siteLink:''
-    }
-]
+const {siteData} = useOurWork()
 
 </script>
 

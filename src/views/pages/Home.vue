@@ -3,30 +3,13 @@ import MainLayout from "@/layouts/MainLayout.vue";
 import TechAndProjsSection from "@/components/sections/TechAndProjsSection.vue";
 import UpCityRating from "@/components/UpCityRating.vue";
 import MultiButton from "@/components/MultiButton.vue";
-import AegisLivingIcon from "@/assets/icons/Home/AegisLivingIcon.vue";
-import KojimaProductionIcon from "@/assets/icons/Home/KojimaProductionIcon.vue";
-import DoctorButtersIcon from "@/assets/icons/Home/DoctorButtersIcon.vue";
-import IrisTelehealthIcon from "@/assets/icons/Home/IrisTelehealthIcon.vue";
-import UnitedWayIcon from "@/assets/icons/Home/UnitedWayIcon.vue";
 import WebsiteIcon from "@/assets/icons/Home/WebsiteIcon.vue";
 import SearchEngineIcon from "@/assets/icons/Home/SearchEngineIcon.vue";
 import PostCard from "@/components/PostCard.vue";
+import {useHome} from "@/composables/useHome";
 
-const posts = [
-    {
-        image: "src/assets/images/Home/post1.png",
-        title: "Custom WordPress Development: A Comprehensive Guide"
-    },
-    {
-        image: "src/assets/images/Home/post3.png",
-        title: "10 Simple Ways to Improve Your Website Copy for Higher Conversions"
-    },
-    {
-        image: "src/assets/images/Home/post2.png",
-        title: "10 Landing Page Do’s and Don’ts"
-    },
-]
 
+const {posts, icons} = useHome()
 </script>
 
 <template>
@@ -60,11 +43,7 @@ const posts = [
                 </div>
 
                 <div class="overflow-scroll md:overflow-hidden w-full md:justify-center flex gap-11">
-                    <AegisLivingIcon/>
-                    <KojimaProductionIcon/>
-                    <DoctorButtersIcon/>
-                    <IrisTelehealthIcon/>
-                    <UnitedWayIcon/>
+                    <Component v-for="icon in icons" :is="icon"/>
                 </div>
             </div>
         </div>
