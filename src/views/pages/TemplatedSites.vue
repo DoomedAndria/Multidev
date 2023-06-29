@@ -66,7 +66,7 @@ const {cardData,tempSites,questions} = useTemplatedSites()
                 totally unique website this is usually
                 the best way to go.
             </p>
-            <img src="/src/assets/images/TemplatedSites/preview.png">
+            <img alt="123" src="/src/assets/images/TemplatedSites/preview.png">
         </div>
 
         <div class="flex flex-col items-center gap-5 px-5 py-10 md:py-20 bg-[#EEF8FF]">
@@ -107,7 +107,7 @@ const {cardData,tempSites,questions} = useTemplatedSites()
             <div class="flex flex-col gap-7 md:flex-row">
 
                 <div v-for="site in tempSites" class="flex flex-col">
-                    <img :src="site">
+                    <img alt="123" :src="site">
                     <div class="flex justify-between px-7 py-5 bg-white rounded-b-3xl">
                         <p>ATM supports</p>
                         <RouterLink to="#" class="text-[#23A6F0]">View Website</RouterLink>
