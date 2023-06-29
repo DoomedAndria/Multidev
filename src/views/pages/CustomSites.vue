@@ -6,8 +6,8 @@ import MultiButton from "@/components/MultiButton.vue";
 
 <template>
     <ContactLayout>
-        <div class="flex px-5 py-10 bg-[#6967CE] text-center md:text-start">
-            <div class="w-full md:w-3/5  flex justify-center">
+        <div class="flex  bg-[#6967CE] text-center md:text-start">
+            <div class="w-full md:w-3/5 px-5 py-10 flex justify-center">
                 <div class="max-w-2xl flex flex-col gap-7 items-center md:items-start">
                     <h1 class="text-white text-4xl md:text-6xl font-bold">
                         <span class="text-[#FFB902]">Custom</span> Websites
@@ -20,11 +20,12 @@ import MultiButton from "@/components/MultiButton.vue";
                         <MultiButton btype="light" arrow="false" class="px-8 py-4 rounded-full">Get In Touch</MultiButton>
                     </RouterLink>
                 </div>
+
             </div>
+
             <div class="md:w-2/5">
-
+                <img alt="123" class="hidden lg:block" src="src/assets/images/CustomSites/topImg.png">
             </div>
-
         </div>
         <div class=" flex flex-col md:flex-row px-5 md:px-0 pb-20">
             <div class=" w-full flex flex-col gap-7 mt-20 md:mt-36  items-start md:px-12">
