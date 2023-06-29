@@ -1,10 +1,11 @@
 import {ref} from "vue";
 
+import p1 from "@/assets/images/Blog/p1.png"
 export function useBlog() {
     const posts = ref(
         [
             {
-                image: 'src/assets/images/Blog/p1.png',
+                image: p1,
                 title: 'Custom WordPress Development: A Comprehensive Guide',
                 author: 'Nick Meagher',
                 date: 'May 11, 2023',
@@ -13,7 +14,7 @@ export function useBlog() {
                     'business goals.'
             },
             {
-                image: 'src/assets/images/Blog/p1.png',
+                image: p1,
                 title: 'Custom WordPress Development: A Comprehensive Guide',
                 author: 'Nick Meagher',
                 date: 'May 11, 2023',
@@ -22,7 +23,7 @@ export function useBlog() {
                     'business goals.'
             },
             {
-                image: 'src/assets/images/Blog/p1.png',
+                image: p1,
                 title: 'Custom WordPress Development: A Comprehensive Guide',
                 author: 'Nick Meagher',
                 date: 'May 11, 2023',
@@ -31,7 +32,7 @@ export function useBlog() {
                     'business goals.'
             },
             {
-                image: 'src/assets/images/Blog/p1.png',
+                image: p1,
                 title: 'Custom WordPress Development: A Comprehensive Guide',
                 author: 'Nick Meagher',
                 date: 'May 11, 2023',

@@ -56,7 +56,7 @@ import MultiButton from "@/components/MultiButton.vue";
                 </RouterLink>
             </div>
             <div class="w-full mt-20 md:mt-0">
-                <img alt="ll" src="src/assets/images/CustomSites/img.png" class="w-full h-full object-cover">
+                <img alt="ll" src="/src/assets/images/CustomSites/img.png" class="w-full h-full object-cover">
             </div>
         </div>
 

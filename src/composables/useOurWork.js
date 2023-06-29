@@ -1,9 +1,10 @@
 import {ref} from "vue";
 
+import site from "@/assets/images/OurWork/site.png"
 export function useOurWork(){
     const siteData = ref([
         {
-            image:'src/assets/images/OurWork/site.png',
+            image:site,
             title:'Corewood Care',
             content: 'Corewood Care is a privately owned\n' +
                 'home care and care management\n' +
@@ -13,7 +14,7 @@ export function useOurWork(){
             siteLink:''
         },
         {
-            image:'src/assets/images/OurWork/site.png',
+            image:site,
             title:'Corewood Care',
             content: 'Corewood Care is a privately owned\n' +
                 'home care and care management\n' +
@@ -23,7 +24,7 @@ export function useOurWork(){
             siteLink:''
         },
         {
-            image:'src/assets/images/OurWork/site.png',
+            image:site,
             title:'Corewood Care',
             content: 'Corewood Care is a privately owned\n' +
                 'home care and care management\n' +
@@ -33,7 +34,7 @@ export function useOurWork(){
             siteLink:''
         },
         {
-            image:'src/assets/images/OurWork/site.png',
+            image:site,
             title:'Corewood Care',
             content: 'Corewood Care is a privately owned\n' +
                 'home care and care management\n' +

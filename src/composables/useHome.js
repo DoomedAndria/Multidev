@@ -5,18 +5,23 @@ import DoctorButtersIcon from "@/assets/icons/Home/DoctorButtersIcon.vue";
 import IrisTelehealthIcon from "@/assets/icons/Home/IrisTelehealthIcon.vue";
 import UnitedWayIcon from "@/assets/icons/Home/UnitedWayIcon.vue";
 
+import post1 from "@/assets/images/Home/post1.png"
+import post2 from "@/assets/images/Home/post2.png"
+import post3 from "@/assets/images/Home/post3.png"
+
+
 export function useHome() {
     const posts = ref([
         {
-            image: "src/assets/images/Home/post1.png",
+            image: post1,
             title: "Custom WordPress Development: A Comprehensive Guide"
         },
         {
-            image: "src/assets/images/Home/post3.png",
+            image: post2,
             title: "10 Simple Ways to Improve Your Website Copy for Higher Conversions"
         },
         {
-            image: "src/assets/images/Home/post2.png",
+            image: post3,
             title: "10 Landing Page Do’s and Don’ts"
         },
     ])
