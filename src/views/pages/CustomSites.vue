@@ -24,7 +24,7 @@ import MultiButton from "@/components/MultiButton.vue";
             </div>
 
             <div class="md:w-2/5">
-                <img alt="123" class="hidden lg:block" src="src/assets/images/CustomSites/topImg.png">
+                <img alt="123" class="hidden lg:block" src="/src/assets/images/CustomSites/topImg.png">
             </div>
         </div>
         <div class=" flex flex-col md:flex-row px-5 md:px-0 pb-20">
